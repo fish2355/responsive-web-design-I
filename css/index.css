@@ -1,1 +1,82 @@
-@import "/responsive-web-design-I/css/normalize.css";
+@import url(/Users/Braden/Documents/Lambda_FSW/1. Web fundementals/2. Advanced CSS/1. Responsive Design 1/responsive-web-design-I/css/normalize.css);
+html .container {
+  width: 714px;
+  margin: auto;
+  position: relative;
+}
+
+html .container header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.01rem;
+}
+
+html .container header nav a {
+  color: #c6c;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 0 0.3rem;
+}
+
+html .container header nav a:hover {
+  color: cyan;
+  font-size: 1.7em;
+}
+
+html .container main .topSect {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 2.5%;
+}
+
+html .container main .topSect .textBtn {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container main .topSect img {
+  border: 1px solid red;
+  width: 49%;
+}
+
+html .container main .topSect h1 {
+  border: 1px solid red;
+  font-size: 4rem;
+  font-style: italic;
+  text-align: center;
+}
+
+html .container main .topSect .btn {
+  width: 125px;
+  border: 1px solid red;
+}
+
+html .container main #middleImg .middle-img {
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */

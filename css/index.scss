@@ -1,88 +1,129 @@
-.container {
-  header {
-    nav {
-      a {
-        &:hover {
+@import "./normalize.css";
+
+html {
+  .container {
+    width: 714px;
+    margin: auto;
+    position: relative;
+    header {
+      nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.01rem;
+        // border: 1px solid red;
+
+        a {
+          color: #c6c;
+          font-size: 1.3rem;
+          text-decoration: none;
+          padding: 0 0.3rem;
+          //   border: 1px solid red;
+
+          &:hover {
+            color: cyan;
+            font-size: 1.7em;
+          }
+          &:active {
+          }
+          &:focus {
+          }
         }
-        &:active {
+        .logo {
         }
-        &:focus {
-        }
-      }
-      .logo {
       }
     }
-  }
-  main {
-    .topSect {
-      .textBtn {
+    main {
+      .topSect {
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2.5%;
+
+        .textBtn {
+          border: 1px solid red;
+          display: flex;
+          flex-direction: column;
+          width: 49%;
+          justify-content: center;
+          align-items: center;
+        }
+        img {
+          border: 1px solid red;
+          width: 49%;
+        }
+        h1 {
+          border: 1px solid red;
+          font-size: 4rem;
+          font-style: italic;
+          text-align: center;
+        }
+        .btn {
+          width: 125px;
+          border: 1px solid red;
+
+          &:hover {
+          }
+          &:active {
+          }
+          &:focus {
+          }
+        }
       }
-      img {
+      .topText {
+        .features {
+        }
+        .about {
+        }
+        h2 {
+        }
+        p {
+        }
+        h2 {
+        }
+        p {
+        }
       }
-      h1 {
+      #middleImg {
+        .middle-img {
+          width: 100%;
+        }
+      }
+      .btmText {
+        .services {
+        }
+        .product {
+        }
+        .vision {
+        }
+        h2 {
+        }
+        p {
+        }
+        h2 {
+        }
+        p {
+        }
+        h2 {
+        }
+        p {
+        }
+      }
+    }
+    footer {
+      h2 {
+      }
+      address {
         br {
         }
       }
-      .btn {
-        &:hover {
-        }
-        &:active {
-        }
-        &:focus {
-        }
+      span {
       }
-    }
-    .topText {
-      .features {
-      }
-      .about {
-      }
-      h2 {
-      }
-      p {
-      }
-      h2 {
-      }
-      p {
-      }
-    }
-    #middleImg {
-      .middle-img {
-      }
-    }
-    .btmText {
-      .services {
-      }
-      .product {
-      }
-      .vision {
-      }
-      h2 {
-      }
-      p {
-      }
-      h2 {
-      }
-      p {
-      }
-      h2 {
-      }
-      p {
-      }
-    }
-  }
-  footer {
-    h2 {
-    }
-    address {
       br {
       }
-    }
-    span {
-    }
-    br {
-    }
-    .copy {
+      .copy {
+      }
     }
   }
 }
