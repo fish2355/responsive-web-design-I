@@ -59,6 +59,7 @@ html {
             font-style: italic;
             text-align: center;
             margin: auto;
+            // margin: 20px;
             // width: 85%;
             // height: 65%;
           }
@@ -109,11 +110,13 @@ html {
           text-decoration: underline;
           text-decoration-color: #20c20e;
           //   border-bottom: 3px solid #20c20e;
+          font-size: 1.65rem;
         }
         p {
           text-align: center;
           border: 1px solid brown;
           width: 90%;
+          font-size: 1.05rem;
         }
       }
       #middleImg {
@@ -124,39 +127,44 @@ html {
         }
       }
       .btmText {
-        .services {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .btm-box {
+          width: 75%;
+          display: flex;
+          flex-direction: column;
+          //   border: solid red 1px;
+          text-align: center;
+          align-items: center;
+          justify-content: space-around;
         }
-        .product {
-        }
-        .vision {
-        }
-        h2 {
-        }
-        p {
-        }
-        h2 {
-        }
-        p {
-        }
-        h2 {
-        }
-        p {
-        }
+      }
+
+      h2 {
+        // border: solid red 1px;
+        font-size: 1.65rem;
+        margin: 2%;
+      }
+      p {
+        width: 90%;
+        // border: 1px solid red;
+        font-size: 1.05rem;
+        margin: 1%;
       }
     }
-    footer {
-      h2 {
-      }
-      address {
-        br {
-        }
-      }
-      span {
-      }
-      br {
-      }
-      .copy {
-      }
+  }
+  footer {
+    h2 {
+      font-size: 1.65rem;
+    }
+    address {
+    }
+    span {
+    }
+    .copy {
+      text-align: center;
     }
   }
 }
