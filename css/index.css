@@ -1,4 +1,8 @@
 @import url(/Users/Braden/Documents/Lambda_FSW/1. Web fundementals/2. Advanced CSS/1. Responsive Design 1/responsive-web-design-I/css/normalize.css);
+html {
+  background-color: skyblue;
+}
+
 html .container {
   width: 714px;
   margin: auto;
@@ -38,11 +42,14 @@ html .container main .topSect {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2.5%;
 }
 
 html .container main .topSect .textBtn {
-  border: 1px solid red;
+  border: 1px solid lime;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,33 +57,103 @@ html .container main .topSect .textBtn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 49%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 50%;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-html .container main .topSect img {
-  border: 1px solid red;
-  width: 49%;
-}
-
-html .container main .topSect h1 {
+html .container main .topSect .textBtn h1 {
   border: 1px solid red;
   font-size: 4rem;
   font-style: italic;
   text-align: center;
+  margin: auto;
 }
 
-html .container main .topSect .btn {
-  width: 125px;
+html .container main .topSect .textBtn .btn {
+  width: 8em;
+  height: 2.5em;
   border: 1px solid red;
+  background-color: #fff6a7;
+  margin: 0.8525em auto;
+}
+
+html .container main .topSect img {
+  border: 1px solid red;
+  width: 50%;
+}
+
+html .container main .topText {
+  border: 1px solid deepskyblue;
+  width: 100%;
+  margin: 1% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container main .topText .features {
+  border: 1px solid deeppink;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container main .topText .about {
+  border: 1px solid deeppink;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container main .topText h2 {
+  text-align: center;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #20c20e;
+          text-decoration-color: #20c20e;
+}
+
+html .container main .topText p {
+  text-align: center;
+  border: 1px solid brown;
+  width: 90%;
+}
+
+html .container main #middleImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 html .container main #middleImg .middle-img {
-  width: 100%;
+  width: 97%;
 }
 /*# sourceMappingURL=index.css.map */
