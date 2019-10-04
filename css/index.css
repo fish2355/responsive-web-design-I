@@ -1,6 +1,6 @@
 @import url(/Users/Braden/Documents/Lambda_FSW/1. Web fundementals/2. Advanced CSS/1. Responsive Design 1/responsive-web-design-I/css/normalize.css);
 html {
-  background-color: skyblue;
+  background-color: #6ea4be;
 }
 
 html .container {
@@ -14,9 +14,8 @@ html .container header nav {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -24,19 +23,18 @@ html .container header nav {
 }
 
 html .container header nav a {
-  color: #c6c;
-  font-size: 1.3rem;
+  color: #065e1f;
+  font-size: 1.476rem;
   text-decoration: none;
   padding: 0 0.3rem;
 }
 
 html .container header nav a:hover {
-  color: cyan;
+  color: #0e3446;
   font-size: 1.7em;
 }
 
 html .container main .topSect {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,7 +47,6 @@ html .container main .topSect {
 }
 
 html .container main .topSect .textBtn {
-  border: 1px solid lime;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,7 +62,6 @@ html .container main .topSect .textBtn {
 }
 
 html .container main .topSect .textBtn h1 {
-  border: 1px solid red;
   font-size: 4rem;
   font-style: italic;
   text-align: center;
@@ -75,18 +71,27 @@ html .container main .topSect .textBtn h1 {
 html .container main .topSect .textBtn .btn {
   width: 8em;
   height: 2.5em;
-  border: 1px solid red;
-  background-color: #fff6a7;
-  margin: 0.8525em auto;
+  background-color: #f1e895;
+  border: 0.1267rem solid #0a6b26;
+  margin: 1.6362rem auto 0 auto;
+  font-size: 1.1127rem;
+}
+
+html .container main .topSect .textBtn .btn:hover {
+  background-color: #bec8ee;
+  color: #041822;
+  border: 1px solid darkmagenta;
+}
+
+html .container main .topSect .textBtn .btn:focus {
+  background-color: lawngreen;
 }
 
 html .container main .topSect img {
-  border: 1px solid red;
   width: 50%;
 }
 
 html .container main .topText {
-  border: 1px solid deepskyblue;
   width: 100%;
   margin: 1% auto;
   display: -webkit-box;
@@ -102,7 +107,7 @@ html .container main .topText {
 }
 
 html .container main .topText .features {
-  border: 1px solid deeppink;
+  margin: 2.1369% auto 1.6438% auto;
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +122,7 @@ html .container main .topText .features {
 }
 
 html .container main .topText .about {
-  border: 1px solid deeppink;
+  margin: 1.6438% auto;
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,14 +139,11 @@ html .container main .topText .about {
 html .container main .topText h2 {
   text-align: center;
   text-decoration: underline;
-  -webkit-text-decoration-color: #20c20e;
-          text-decoration-color: #20c20e;
   font-size: 1.65rem;
 }
 
 html .container main .topText p {
   text-align: center;
-  border: 1px solid brown;
   width: 90%;
   font-size: 1.05rem;
 }
@@ -157,6 +159,8 @@ html .container main #middleImg {
 
 html .container main #middleImg .middle-img {
   width: 97%;
+  margin: 2.4674% auto;
+  border: inset 0.2862rem #43559e;
 }
 
 html .container main .btmText {
@@ -187,11 +191,13 @@ html .container main .btmText .btm-box {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 1.6438% auto;
 }
 
 html .container main h2 {
   font-size: 1.65rem;
   margin: 2%;
+  text-decoration: underline;
 }
 
 html .container main p {
@@ -200,11 +206,29 @@ html .container main p {
   margin: 1%;
 }
 
+html footer {
+  width: 87%;
+  margin: 3% auto 0 auto;
+}
+
 html footer h2 {
   font-size: 1.65rem;
+  text-align: right;
+  margin: 2%;
+}
+
+html footer address {
+  text-align: right;
+  margin: 0.35%;
+}
+
+html footer p {
+  text-align: right;
+  margin: 0.35%;
 }
 
 html footer .copy {
   text-align: center;
+  margin: 0.35%;
 }
 /*# sourceMappingURL=index.css.map */
