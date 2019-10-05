@@ -5,148 +5,138 @@
     @content;
   }
 }
-
 @mixin for-desktop {
   @media (min-width: 1251px) {
     @content;
   }
 }
+html {
+  background-color: lavender;
+  @include for-tablet() {
+    background-color: slateblue;
+  }
+  @include for-desktop() {
+    background-color: sandybrown;
+  }
+  .container {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    max-width: 950px;
+    header {
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 1.01rem;
 
-header {
-  nav {
-    a {
-      &:hover {
+        a {
+          text-decoration: none;
+          color: palevioletred;
+          font-size: 1.476rem;
+          padding: 0.3rem;
+          margin: 0.2853rem 0;
+          width: 95%;
+          text-align: center;
+          &:hover {
+            color: rgb(109, 165, 184);
+          }
+          &:active {
+          }
+          &:focus {
+          }
+        }
+        .logoclass {
+          .logo {
+            padding: 0.3rem;
+          }
+          &:hover {
+          }
+          &:active {
+          }
+          &:focus {
+          }
+        }
       }
-      &:active {
+      .services-header-img {
+        width: 100%;
       }
-      &:focus {
-      }
-    }
-    .logoclass {
-      .logo {
-      }
-      &:hover {
-      }
-      &:active {
-      }
-      &:focus {
-      }
-    }
-  }
-  .services-header-img {
-  }
-  .services {
-    h2 {
-    }
-    p {
-    }
-  }
-}
-.middleSect {
-  .digDes.midBox {
-    h2 {
-    }
-    p {
-    }
-    button {
-      &:hover {
-      }
-      &:active {
-      }
-      &:focus {
+      .services {
+        text-align: center;
+        border-bottom: 1px solid black;
+        margin-bottom: 1rem;
+        h2 {
+        }
+        p {
+        }
       }
     }
-  }
-  .ux.midBox {
-    h2 {
-    }
-    p {
-    }
-    button {
-      &:hover {
+    main {
+      .middleSect {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .midBox {
+          width: 46%;
+          text-align: center;
+          border: 1px dashed turquoise;
+          margin: 1%;
+          padding: 0.75%;
+          h2 {
+          }
+          p {
+          }
+          button {
+            // justify-content: flex-start;
+            width: 6rem;
+            border: solid greenyellow 1px;
+            border-radius: 17%;
+            background-color: rgb(247, 220, 224);
+            &:hover {
+            }
+            &:active {
+            }
+            &:focus {
+            }
+          }
+        }
       }
-      &:active {
+      .btmSect {
+        border-top: 1px solid black;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        .leftTxt {
+          width: 46%;
+          text-align: center;
+          h2 {
+          }
+          p {
+          }
+
+          .list {
+            ul {
+              padding: 0px;
+              margin: 0px;
+            }
+            li {
+              list-style: none;
+            }
+          }
+        }
+        .services-info-img {
+          width: 46%;
+          margin-top: 1rem;
+        }
       }
-      &:focus {
-      }
-    }
-  }
-  .digMark.midBox {
-    h2 {
-    }
-    p {
-    }
-    button {
-      &:hover {
-      }
-      &:active {
-      }
-      &:focus {
-      }
-    }
-  }
-  .webDev.midBox {
-    h2 {
-    }
-    p {
-    }
-    button {
-      &:hover {
-      }
-      &:active {
-      }
-      &:focus {
-      }
-    }
-  }
-  .iosDev.midBox {
-    h2 {
-    }
-    p {
-    }
-    button {
-      &:hover {
-      }
-      &:active {
-      }
-      &:focus {
-      }
-    }
-  }
-  .androidDev.midBox {
-    h2 {
-    }
-    p {
-    }
-    button {
-      &:hover {
-      }
-      &:active {
-      }
-      &:focus {
+
+      footer {
+        text-align: center;
+        p {
+        }
       }
     }
-  }
-}
-.btmSect {
-  .leftTxt {
-    h2 {
-    }
-    p {
-    }
-    br {
-    }
-    .list {
-      ul {
-      }
-      li {
-      }
-    }
-  }
-  .services-info-img {
-  }
-}
-footer {
-  p {
   }
 }

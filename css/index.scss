@@ -1,14 +1,10 @@
 @import "./normalize.css";
+
 @mixin for-tablet {
   @media (min-width: 950px) and (max-width: 1250px) {
     @content;
   }
 }
-// @mixin for-tablet {
-//   @media (min-width: 950px) {
-//     @content;
-//   }
-// }
 @mixin for-desktop {
   @media (min-width: 1251px) {
     @content;
