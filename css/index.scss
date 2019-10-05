@@ -1,14 +1,26 @@
 @import "./normalize.css";
+// @mixin for-tablet {
+//   @media (min-width: 950px) and (max-width: 1250px) {
+//     @content;
+//   }
+// }
 @mixin for-tablet {
-  @media (min-width: 950px) and (max-width: 1250px) {
+  @media (min-width: 950px) {
     @content;
   }
 }
-
+@mixin for-desktop {
+  @media (min-width: 1251px) {
+    @content;
+  }
+}
 html {
   background-color: #6ea4be;
   //   font-size: 20px;
   @include for-tablet() {
+    background-color: hotpink;
+  }
+  @include for-desktop() {
     background-color: lightblue;
   }
 
@@ -31,6 +43,7 @@ html {
           // flex-wrap: wrap;
           border: 2px solid red;
         }
+
         a {
           // border: 1px solid red;
           // display: none;
@@ -67,6 +80,9 @@ html {
           //   color: green;
           // }
           @include for-tablet() {
+          }
+          @include for-desktop() {
+            order: 0;
           }
         }
       }
@@ -112,6 +128,9 @@ html {
           border: 0.1267rem solid #0a6b26;
           margin: 1.6362rem auto 0.5rem auto;
           font-size: 1.1127rem;
+          @include for-tablet() {
+            width: 9.575em;
+          }
 
           &:hover {
             background-color: #bec8ee;
@@ -135,7 +154,14 @@ html {
         border: 3.7325px solid #273469d3;
         border-radius: 50%;
         @include for-tablet() {
-          display: none;
+          visibility: hidden;
+          position: float;
+        }
+        @include for-desktop() {
+          visibility: visible;
+          position: relative;
+          top: 0;
+          opacity: 1;
         }
       }
     }
@@ -251,27 +277,40 @@ footer {
   // border: 1px solid red;
   width: 87%;
   margin: 3% auto 0 auto;
-  // display: flex;
-  // flex-direction: column;
+  @include for-desktop() {
+    width: 100%;
+  }
   h2 {
     font-size: 1.65rem;
     //   border: 1px solid yellow;
     text-align: right;
     margin: 2%;
+    @include for-desktop() {
+      text-align: start;
+    }
   }
   address {
     //   border: 1px solid blue;
     text-align: right;
     margin: 0.35%;
+    @include for-desktop() {
+      text-align: start;
+    }
   }
   a {
     text-decoration: none;
     color: #0274d4;
+    @include for-desktop() {
+      text-align: start;
+    }
   }
   p {
     //   border: 1px solid orangered;
     text-align: right;
     margin: 0.35%;
+    @include for-desktop() {
+      text-align: start;
+    }
   }
 
   .copy {
@@ -282,5 +321,11 @@ footer {
   #easter-egg {
     color: rgb(99, 151, 177);
     text-align: center;
+    @include for-tablet() {
+      color: rgb(211, 72, 141);
+    }
+    @include for-desktop() {
+      color: rgb(132, 186, 204);
+    }
   }
 }

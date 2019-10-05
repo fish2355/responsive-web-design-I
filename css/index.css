@@ -3,7 +3,13 @@ html {
   background-color: #6ea4be;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 950px) {
+  html {
+    background-color: hotpink;
+  }
+}
+
+@media (min-width: 1251px) {
   html {
     background-color: lightblue;
   }
@@ -32,7 +38,7 @@ html .container header nav {
   margin-top: 1.01rem;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 950px) {
   html .container header nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -54,7 +60,7 @@ html .container header nav a {
   z-index: 1;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 950px) {
   html .container header nav a {
     border: none;
   }
@@ -72,12 +78,20 @@ html .container header nav .logo {
   padding: 0.3rem;
 }
 
+@media (min-width: 1251px) {
+  html .container header nav .logo {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+}
+
 html .container header #nav-serv {
   border-top: 1px solid grey;
   padding-top: 0.527rem;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 950px) {
   html .container header #nav-serv {
     border: none;
     padding: 0.3rem;
@@ -127,6 +141,12 @@ html main .topSect .textBtn .btn {
   font-size: 1.1127rem;
 }
 
+@media (min-width: 950px) {
+  html main .topSect .textBtn .btn {
+    width: 9.575em;
+  }
+}
+
 html main .topSect .textBtn .btn:hover {
   background-color: #bec8ee;
   color: #041822;
@@ -146,9 +166,19 @@ html main .topSect img {
   border-radius: 50%;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 950px) {
   html main .topSect img {
-    display: none;
+    visibility: hidden;
+    position: float;
+  }
+}
+
+@media (min-width: 1251px) {
+  html main .topSect img {
+    visibility: visible;
+    position: relative;
+    top: 0;
+    opacity: 1;
   }
 }
 
@@ -168,7 +198,7 @@ html main .topText {
           align-items: center;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 950px) {
   html main .topText {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -201,7 +231,7 @@ html main .topText .features {
           align-items: center;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 950px) {
   html main .topText .features {
     margin-bottom: 0.35%;
   }
@@ -222,7 +252,7 @@ html main .topText .about {
           align-items: center;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 950px) {
   html main .topText .about {
     margin-bottom: 0.35%;
   }
@@ -255,7 +285,7 @@ html main #middleImg .middle-img {
   border: inset 0.2862rem #43559e;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 950px) {
   html main #middleImg .middle-img {
     width: 98.5%;
     border: ridge 0.2862rem #43559e;
@@ -275,7 +305,7 @@ html main .btmText {
           align-items: center;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 950px) {
   html main .btmText {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -328,10 +358,22 @@ footer {
   margin: 3% auto 0 auto;
 }
 
+@media (min-width: 1251px) {
+  footer {
+    width: 100%;
+  }
+}
+
 footer h2 {
   font-size: 1.65rem;
   text-align: right;
   margin: 2%;
+}
+
+@media (min-width: 1251px) {
+  footer h2 {
+    text-align: start;
+  }
 }
 
 footer address {
@@ -339,14 +381,32 @@ footer address {
   margin: 0.35%;
 }
 
+@media (min-width: 1251px) {
+  footer address {
+    text-align: start;
+  }
+}
+
 footer a {
   text-decoration: none;
   color: #0274d4;
 }
 
+@media (min-width: 1251px) {
+  footer a {
+    text-align: start;
+  }
+}
+
 footer p {
   text-align: right;
   margin: 0.35%;
+}
+
+@media (min-width: 1251px) {
+  footer p {
+    text-align: start;
+  }
 }
 
 footer .copy {
@@ -357,5 +417,17 @@ footer .copy {
 footer #easter-egg {
   color: #6397b1;
   text-align: center;
+}
+
+@media (min-width: 950px) {
+  footer #easter-egg {
+    color: #d3488d;
+  }
+}
+
+@media (min-width: 1251px) {
+  footer #easter-egg {
+    color: #84bacc;
+  }
 }
 /*# sourceMappingURL=index.css.map */
