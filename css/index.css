@@ -3,8 +3,14 @@ html {
   background-color: #6ea4be;
 }
 
+@media (min-width: 950px) and (max-width: 1250px) {
+  html {
+    background-color: lightblue;
+  }
+}
+
 html .container {
-  width: 714px;
+  width: 95%;
   margin: auto;
   position: relative;
 }
@@ -26,6 +32,16 @@ html .container header nav {
   margin-top: 1.01rem;
 }
 
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 2px solid red;
+  }
+}
+
 html .container header nav a {
   color: #065e1f;
   font-size: 1.476rem;
@@ -38,12 +54,18 @@ html .container header nav a {
   z-index: 1;
 }
 
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container header nav a {
+    border: none;
+  }
+}
+
 html .container header nav a:hover {
   color: #0e3446;
   font-size: 1.7em;
 }
 
-html .container header .logo {
+html .container header nav .logo {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
@@ -53,6 +75,13 @@ html .container header .logo {
 html .container header #nav-serv {
   border-top: 1px solid grey;
   padding-top: 0.527rem;
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container header #nav-serv {
+    border: none;
+    padding: 0.3rem;
+  }
 }
 
 html main .topSect {
@@ -117,6 +146,12 @@ html main .topSect img {
   border-radius: 50%;
 }
 
+@media (min-width: 950px) and (max-width: 1250px) {
+  html main .topSect img {
+    display: none;
+  }
+}
+
 html main .topText {
   border-top: 2px solid black;
   width: 100%;
@@ -131,6 +166,15 @@ html main .topText {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html main .topText {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 html main .topText a,
@@ -157,6 +201,12 @@ html main .topText .features {
           align-items: center;
 }
 
+@media (min-width: 950px) and (max-width: 1250px) {
+  html main .topText .features {
+    margin-bottom: 0.35%;
+  }
+}
+
 html main .topText .about {
   margin: 1.6438% auto;
   width: 75%;
@@ -170,6 +220,12 @@ html main .topText .about {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html main .topText .about {
+    margin-bottom: 0.35%;
+  }
 }
 
 html main .topText h2 {
@@ -199,6 +255,13 @@ html main #middleImg .middle-img {
   border: inset 0.2862rem #43559e;
 }
 
+@media (min-width: 950px) and (max-width: 1250px) {
+  html main #middleImg .middle-img {
+    width: 98.5%;
+    border: ridge 0.2862rem #43559e;
+  }
+}
+
 html main .btmText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,6 +273,15 @@ html main .btmText {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html main .btmText {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 html main .btmText .btm-box {

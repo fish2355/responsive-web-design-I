@@ -1,10 +1,20 @@
 @import "./normalize.css";
+@mixin for-tablet {
+  @media (min-width: 950px) and (max-width: 1250px) {
+    @content;
+  }
+}
 
 html {
   background-color: #6ea4be;
   //   font-size: 20px;
+  @include for-tablet() {
+    background-color: lightblue;
+  }
+
   .container {
-    width: 714px;
+    // width: 714px;
+    width: 95%;
     margin: auto;
     position: relative;
 
@@ -16,9 +26,14 @@ html {
         justify-content: space-around;
         align-items: center;
         margin-top: 1.01rem;
-
+        @include for-tablet() {
+          flex-direction: row;
+          // flex-wrap: wrap;
+          border: 2px solid red;
+        }
         a {
           // border: 1px solid red;
+          // display: none;
           color: #065e1f;
           font-size: 1.476rem;
           text-decoration: none;
@@ -28,7 +43,9 @@ html {
           text-align: center;
           border-bottom: 1px solid grey;
           z-index: 1;
-          // display: none;
+          @include for-tablet() {
+            border: none;
+          }
 
           &:hover {
             color: rgb(14, 52, 70);
@@ -38,21 +55,28 @@ html {
         // .drop-down {
         //   // visibility: hidden;
         //   color: red;
-      }
-      .logo {
-        order: -1;
-        padding: 0.3rem;
-        // &:hover {
-        // }
-        // &:active .drop-down a,
-        // &:focus .drop-down a {
-        // visibility: visible;
-        //   color: green;
-        // }
+
+        .logo {
+          order: -1;
+          padding: 0.3rem;
+          // &:hover {
+          // }
+          // &:active .drop-down a,
+          // &:focus .drop-down a {
+          // visibility: visible;
+          //   color: green;
+          // }
+          @include for-tablet() {
+          }
+        }
       }
       #nav-serv {
         border-top: 1px solid grey;
         padding-top: 0.527rem;
+        @include for-tablet() {
+          border: none;
+          padding: 0.3rem;
+        }
       }
     }
   }
@@ -87,7 +111,6 @@ html {
           background-color: #f1e895;
           border: 0.1267rem solid #0a6b26;
           margin: 1.6362rem auto 0.5rem auto;
-
           font-size: 1.1127rem;
 
           &:hover {
@@ -111,6 +134,9 @@ html {
         z-index: -1;
         border: 3.7325px solid #273469d3;
         border-radius: 50%;
+        @include for-tablet() {
+          display: none;
+        }
       }
     }
     .topText {
@@ -120,6 +146,9 @@ html {
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include for-tablet() {
+        flex-direction: row;
+      }
       a,
       a:visited {
         color: black;
@@ -131,20 +160,24 @@ html {
       .features {
         //   border: 1px solid deeppink;
         margin: 2.1369% auto 1.6438% auto;
-
         width: 75%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include for-tablet() {
+          margin-bottom: 0.35%;
+        }
       }
       .about {
         //   border: 1px solid deeppink;
         margin: 1.6438% auto;
-
         width: 75%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include for-tablet() {
+          margin-bottom: 0.35%;
+        }
       }
       h2 {
         text-align: center;
@@ -167,6 +200,10 @@ html {
         width: 97%;
         margin: 2.4674% auto;
         border: inset 0.2862rem #43559e;
+        @include for-tablet() {
+          width: 98.5%;
+          border: ridge 0.2862rem #43559e;
+        }
       }
     }
     .btmText {
@@ -174,6 +211,9 @@ html {
       display: flex;
       flex-direction: column;
       align-items: center;
+      @include for-tablet() {
+        flex-direction: row;
+      }
       .btm-box {
         width: 75%;
         display: flex;
