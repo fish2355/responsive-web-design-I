@@ -3,7 +3,7 @@ html {
   background-color: #6ea4be;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html {
     background-color: hotpink;
   }
@@ -38,7 +38,7 @@ html .container header nav {
   margin-top: 1.01rem;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html .container header nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -60,7 +60,7 @@ html .container header nav a {
   z-index: 1;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html .container header nav a {
     border: none;
   }
@@ -91,7 +91,7 @@ html .container header #nav-serv {
   padding-top: 0.527rem;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html .container header #nav-serv {
     border: none;
     padding: 0.3rem;
@@ -141,7 +141,7 @@ html main .topSect .textBtn .btn {
   font-size: 1.1127rem;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html main .topSect .textBtn .btn {
     width: 9.575em;
   }
@@ -166,7 +166,7 @@ html main .topSect img {
   border-radius: 50%;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html main .topSect img {
     visibility: hidden;
     position: float;
@@ -198,7 +198,7 @@ html main .topText {
           align-items: center;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html main .topText {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -231,7 +231,7 @@ html main .topText .features {
           align-items: center;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html main .topText .features {
     margin-bottom: 0.35%;
   }
@@ -252,7 +252,7 @@ html main .topText .about {
           align-items: center;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html main .topText .about {
     margin-bottom: 0.35%;
   }
@@ -285,7 +285,7 @@ html main #middleImg .middle-img {
   border: inset 0.2862rem #43559e;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html main #middleImg .middle-img {
     width: 98.5%;
     border: ridge 0.2862rem #43559e;
@@ -305,7 +305,7 @@ html main .btmText {
           align-items: center;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   html main .btmText {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -419,7 +419,7 @@ footer #easter-egg {
   text-align: center;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 950px) and (max-width: 1250px) {
   footer #easter-egg {
     color: #d3488d;
   }
