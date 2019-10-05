@@ -1,0 +1,152 @@
+@import "./normalize.css";
+
+@mixin for-tablet {
+  @media (min-width: 950px) and (max-width: 1250px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (min-width: 1251px) {
+    @content;
+  }
+}
+
+header {
+  nav {
+    a {
+      &:hover {
+      }
+      &:active {
+      }
+      &:focus {
+      }
+    }
+    .logoclass {
+      .logo {
+      }
+      &:hover {
+      }
+      &:active {
+      }
+      &:focus {
+      }
+    }
+  }
+  .services-header-img {
+  }
+  .services {
+    h2 {
+    }
+    p {
+    }
+  }
+}
+.middleSect {
+  .digDes.midBox {
+    h2 {
+    }
+    p {
+    }
+    button {
+      &:hover {
+      }
+      &:active {
+      }
+      &:focus {
+      }
+    }
+  }
+  .ux.midBox {
+    h2 {
+    }
+    p {
+    }
+    button {
+      &:hover {
+      }
+      &:active {
+      }
+      &:focus {
+      }
+    }
+  }
+  .digMark.midBox {
+    h2 {
+    }
+    p {
+    }
+    button {
+      &:hover {
+      }
+      &:active {
+      }
+      &:focus {
+      }
+    }
+  }
+  .webDev.midBox {
+    h2 {
+    }
+    p {
+    }
+    button {
+      &:hover {
+      }
+      &:active {
+      }
+      &:focus {
+      }
+    }
+  }
+  .iosDev.midBox {
+    h2 {
+    }
+    p {
+    }
+    button {
+      &:hover {
+      }
+      &:active {
+      }
+      &:focus {
+      }
+    }
+  }
+  .androidDev.midBox {
+    h2 {
+    }
+    p {
+    }
+    button {
+      &:hover {
+      }
+      &:active {
+      }
+      &:focus {
+      }
+    }
+  }
+}
+.btmSect {
+  .leftTxt {
+    h2 {
+    }
+    p {
+    }
+    br {
+    }
+    .list {
+      ul {
+      }
+      li {
+      }
+    }
+  }
+  .services-info-img {
+  }
+}
+footer {
+  p {
+  }
+}
