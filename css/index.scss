@@ -21,12 +21,47 @@ html {
   }
 
   .container {
-    // width: 714px;
+    max-width: 714px;
     width: 95%;
     margin: auto;
     position: relative;
+    @include for-tablet() {
+      max-width: 1150px;
+    }
+    @include for-desktop() {
+      max-width: 2000px;
+    }
 
     header {
+      display: flex;
+      flex-direction: column;
+      @include for-desktop() {
+        flex-direction: row;
+        justify-content: space space-between;
+      }
+
+      align-items: center;
+      .logo {
+        padding: 0.3rem;
+        width: 183px;
+        height: 36px;
+        flex-grow: 1;
+        // width: 20px;
+        // set to absolute then not on nav?
+
+        // &:hover {
+        // }
+        // &:active .drop-down a,
+        // &:focus .drop-down a {
+        // visibility: visible;
+        //   color: green;
+        // }
+        @include for-tablet() {
+        }
+        @include for-desktop() {
+          order: 1;
+        }
+      }
       nav {
         display: flex;
         flex-direction: column;
@@ -34,10 +69,16 @@ html {
         justify-content: space-around;
         align-items: center;
         margin-top: 1.01rem;
+        // border: 2px solid red;
+        // position: absolute;
+
         @include for-tablet() {
           flex-direction: row;
           // flex-wrap: wrap;
-          border: 2px solid red;
+          // border: 2px solid red;
+        }
+        @include for-desktop() {
+          flex-direction: row;
         }
 
         a {
@@ -48,51 +89,50 @@ html {
           text-decoration: none;
           padding: 0.3rem;
           margin: 0.2853rem 0;
-          width: 105%;
+          width: 100%;
           text-align: center;
           border-bottom: 1px solid grey;
           z-index: 1;
+          // position: absolute;
+
           @include for-tablet() {
+            border: none;
+          }
+          @include for-desktop() {
             border: none;
           }
 
           &:hover {
             color: rgb(14, 52, 70);
             font-size: 1.7em;
+            // position: relative;
           }
         }
         // .drop-down {
         //   // visibility: hidden;
         //   color: red;
-
-        .logo {
-          order: -1;
-          padding: 0.3rem;
-          // &:hover {
-          // }
-          // &:active .drop-down a,
-          // &:focus .drop-down a {
-          // visibility: visible;
-          //   color: green;
-          // }
-          @include for-tablet() {
-          }
-          @include for-desktop() {
-            order: 0;
-          }
-        }
       }
       #nav-serv {
         border-top: 1px solid grey;
         padding-top: 0.527rem;
+        postion: relative;
         @include for-tablet() {
           border: none;
+          padding: 0.3rem;
+        }
+        @include for-desktop() {
+          border: none;
+
           padding: 0.3rem;
         }
       }
     }
   }
   main {
+    margin-top: 13%;
+    @include for-desktop() {
+      margin-top: 1rem;
+    }
     .topSect {
       // border: 1px solid red;
       display: flex;
@@ -145,10 +185,11 @@ html {
         // display: none;
         position: absolute;
         opacity: 0.2375;
-        top: 20.175rem;
+        top: 22.175rem;
         z-index: -1;
         border: 3.7325px solid #273469d3;
         border-radius: 50%;
+
         @include for-tablet() {
           visibility: hidden;
           position: float;
@@ -162,13 +203,16 @@ html {
       }
     }
     .topText {
-      border-top: 2px solid black;
+      border-top: 2px dashed #007ec7;
       width: 100%;
       margin: 1% auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       @include for-tablet() {
+        flex-direction: row;
+      }
+      @include for-desktop() {
         flex-direction: row;
       }
       a,
@@ -235,6 +279,13 @@ html {
       align-items: center;
       @include for-tablet() {
         flex-direction: row;
+        border-bottom: 2px solid black;
+        padding-bottom: 0.7365rem;
+      }
+      @include for-desktop() {
+        flex-direction: row;
+        border-bottom: 2px dashed black;
+        padding-bottom: 0.7365rem;
       }
       .btm-box {
         width: 75%;
@@ -275,6 +326,7 @@ footer {
   margin: 3% auto 0 auto;
   @include for-desktop() {
     width: 100%;
+    margin-top: 3.685rem;
   }
   h2 {
     font-size: 1.65rem;

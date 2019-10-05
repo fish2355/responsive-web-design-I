@@ -16,9 +16,64 @@ html {
 }
 
 html .container {
+  max-width: 714px;
   width: 95%;
   margin: auto;
   position: relative;
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container {
+    max-width: 1150px;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container {
+    max-width: 2000px;
+  }
+}
+
+html .container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1251px) {
+  html .container header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space space-between;
+        -ms-flex-pack: space space-between;
+            justify-content: space space-between;
+  }
+}
+
+html .container header .logo {
+  padding: 0.3rem;
+  width: 183px;
+  height: 36px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media (min-width: 1251px) {
+  html .container header .logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 html .container header nav {
@@ -44,7 +99,15 @@ html .container header nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    border: 2px solid red;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -54,7 +117,7 @@ html .container header nav a {
   text-decoration: none;
   padding: 0.3rem;
   margin: 0.2853rem 0;
-  width: 105%;
+  width: 100%;
   text-align: center;
   border-bottom: 1px solid grey;
   z-index: 1;
@@ -66,35 +129,44 @@ html .container header nav a {
   }
 }
 
+@media (min-width: 1251px) {
+  html .container header nav a {
+    border: none;
+  }
+}
+
 html .container header nav a:hover {
   color: #0e3446;
   font-size: 1.7em;
 }
 
-html .container header nav .logo {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-  padding: 0.3rem;
-}
-
-@media (min-width: 1251px) {
-  html .container header nav .logo {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-}
-
 html .container header #nav-serv {
   border-top: 1px solid grey;
   padding-top: 0.527rem;
+  postion: relative;
 }
 
 @media (min-width: 950px) and (max-width: 1250px) {
   html .container header #nav-serv {
     border: none;
     padding: 0.3rem;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container header #nav-serv {
+    border: none;
+    padding: 0.3rem;
+  }
+}
+
+html main {
+  margin-top: 13%;
+}
+
+@media (min-width: 1251px) {
+  html main {
+    margin-top: 1rem;
   }
 }
 
@@ -160,7 +232,7 @@ html main .topSect .textBtn .btn:focus {
 html main .topSect img {
   position: absolute;
   opacity: 0.2375;
-  top: 20.175rem;
+  top: 22.175rem;
   z-index: -1;
   border: 3.7325px solid #273469d3;
   border-radius: 50%;
@@ -183,7 +255,7 @@ html main .topSect img {
 }
 
 html main .topText {
-  border-top: 2px solid black;
+  border-top: 2px dashed #007ec7;
   width: 100%;
   margin: 1% auto;
   display: -webkit-box;
@@ -199,6 +271,15 @@ html main .topText {
 }
 
 @media (min-width: 950px) and (max-width: 1250px) {
+  html main .topText {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1251px) {
   html main .topText {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -311,6 +392,19 @@ html main .btmText {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.7365rem;
+  }
+}
+
+@media (min-width: 1251px) {
+  html main .btmText {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-bottom: 2px dashed black;
+    padding-bottom: 0.7365rem;
   }
 }
 
@@ -361,6 +455,7 @@ footer {
 @media (min-width: 1251px) {
   footer {
     width: 100%;
+    margin-top: 3.685rem;
   }
 }
 
