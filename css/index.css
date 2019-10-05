@@ -13,6 +13,10 @@ html .container header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -26,7 +30,12 @@ html .container header nav a {
   color: #065e1f;
   font-size: 1.476rem;
   text-decoration: none;
-  padding: 0 0.3rem;
+  padding: 0.3rem;
+  margin: 0.2853rem 0;
+  width: 105%;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  z-index: 1;
 }
 
 html .container header nav a:hover {
@@ -34,7 +43,19 @@ html .container header nav a:hover {
   font-size: 1.7em;
 }
 
-html .container main .topSect {
+html .container header .logo {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  padding: 0.3rem;
+}
+
+html .container header #nav-serv {
+  border-top: 1px solid grey;
+  padding-top: 0.527rem;
+}
+
+html main .topSect {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,10 +64,10 @@ html .container main .topSect {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2.5%;
+  margin: 7.5%;
 }
 
-html .container main .topSect .textBtn {
+html main .topSect .textBtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,37 +82,43 @@ html .container main .topSect .textBtn {
           align-items: center;
 }
 
-html .container main .topSect .textBtn h1 {
+html main .topSect .textBtn h1 {
   font-size: 4rem;
   font-style: italic;
   text-align: center;
   margin: auto;
 }
 
-html .container main .topSect .textBtn .btn {
+html main .topSect .textBtn .btn {
   width: 8em;
   height: 2.5em;
   background-color: #f1e895;
   border: 0.1267rem solid #0a6b26;
-  margin: 1.6362rem auto 0 auto;
+  margin: 1.6362rem auto 0.5rem auto;
   font-size: 1.1127rem;
 }
 
-html .container main .topSect .textBtn .btn:hover {
+html main .topSect .textBtn .btn:hover {
   background-color: #bec8ee;
   color: #041822;
   border: 1px solid darkmagenta;
 }
 
-html .container main .topSect .textBtn .btn:focus {
+html main .topSect .textBtn .btn:focus {
   background-color: lawngreen;
 }
 
-html .container main .topSect img {
-  width: 50%;
+html main .topSect img {
+  position: absolute;
+  opacity: 0.2375;
+  top: 20.175rem;
+  z-index: -1;
+  border: 3.7325px solid #273469d3;
+  border-radius: 50%;
 }
 
-html .container main .topText {
+html main .topText {
+  border-top: 2px solid black;
   width: 100%;
   margin: 1% auto;
   display: -webkit-box;
@@ -106,7 +133,16 @@ html .container main .topText {
           align-items: center;
 }
 
-html .container main .topText .features {
+html main .topText a,
+html main .topText a:visited {
+  color: black;
+}
+
+html main .topText a:hover {
+  color: #321741;
+}
+
+html main .topText .features {
   margin: 2.1369% auto 1.6438% auto;
   width: 75%;
   display: -webkit-box;
@@ -121,7 +157,7 @@ html .container main .topText .features {
           align-items: center;
 }
 
-html .container main .topText .about {
+html main .topText .about {
   margin: 1.6438% auto;
   width: 75%;
   display: -webkit-box;
@@ -136,19 +172,19 @@ html .container main .topText .about {
           align-items: center;
 }
 
-html .container main .topText h2 {
+html main .topText h2 {
   text-align: center;
   text-decoration: underline;
   font-size: 1.65rem;
 }
 
-html .container main .topText p {
+html main .topText p {
   text-align: center;
   width: 90%;
   font-size: 1.05rem;
 }
 
-html .container main #middleImg {
+html main #middleImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,13 +193,13 @@ html .container main #middleImg {
           justify-content: center;
 }
 
-html .container main #middleImg .middle-img {
+html main #middleImg .middle-img {
   width: 97%;
   margin: 2.4674% auto;
   border: inset 0.2862rem #43559e;
 }
 
-html .container main .btmText {
+html main .btmText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +212,7 @@ html .container main .btmText {
           align-items: center;
 }
 
-html .container main .btmText .btm-box {
+html main .btmText .btm-box {
   width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,41 +230,60 @@ html .container main .btmText .btm-box {
   margin: 1.6438% auto;
 }
 
-html .container main h2 {
+html main .btmText .btm-box a,
+html main .btmText .btm-box a:visited {
+  color: black;
+}
+
+html main .btmText .btm-box a:hover {
+  color: #321741;
+}
+
+html main h2 {
   font-size: 1.65rem;
   margin: 2%;
   text-decoration: underline;
 }
 
-html .container main p {
+html main p {
   width: 90%;
   font-size: 1.05rem;
   margin: 1%;
 }
 
-html footer {
+footer {
   width: 87%;
   margin: 3% auto 0 auto;
 }
 
-html footer h2 {
+footer h2 {
   font-size: 1.65rem;
   text-align: right;
   margin: 2%;
 }
 
-html footer address {
+footer address {
   text-align: right;
   margin: 0.35%;
 }
 
-html footer p {
+footer a {
+  text-decoration: none;
+  color: #0274d4;
+}
+
+footer p {
   text-align: right;
   margin: 0.35%;
 }
 
-html footer .copy {
+footer .copy {
   text-align: center;
   margin: 0.35%;
+}
+
+footer #easter-egg {
+  color: #6397b1;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */
