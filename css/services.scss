@@ -10,6 +10,11 @@
     @content;
   }
 }
+@mixin for-mobile {
+  @media (max-width: 950px) {
+    @content;
+  }
+}
 html {
   background-color: lavender;
   @include for-tablet() {
@@ -23,6 +28,12 @@ html {
     margin: auto;
     position: relative;
     max-width: 950px;
+    @include for-tablet() {
+      max-width: 1150px;
+    }
+    @include for-desktop() {
+      max-width: 2000px;
+    }
     header {
       nav {
         display: flex;
@@ -41,10 +52,16 @@ html {
           text-align: center;
           &:hover {
             color: rgb(109, 165, 184);
+            @include for-desktop() {
+              color: rgb(93, 127, 139);
+            }
           }
           &:active {
           }
           &:focus {
+          }
+          @include for-desktop() {
+            color: darkcyan;
           }
         }
         .logoclass {
@@ -69,6 +86,11 @@ html {
         h2 {
         }
         p {
+          @include for-desktop() {
+            text-align: left;
+            margin-left: 1rem;
+            margin-right: 1rem;
+          }
         }
       }
     }
@@ -77,24 +99,61 @@ html {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        @include for-tablet() {
+          flex-direction: row;
+        }
+        @include for-desktop() {
+          flex-direction: row;
+        }
 
         .midBox {
-          width: 46%;
-          text-align: center;
+          width: 98%;
+          text-align: left;
           border: 1px dashed turquoise;
           margin: 1%;
           padding: 0.75%;
+          display: flex;
+          flex-direction: column;
+          @include for-tablet() {
+            width: 45%;
+          }
+          @include for-desktop() {
+            width: 45%;
+            border: none;
+          }
+
           h2 {
+            text-align: center;
+            margin-bottom: 0.2rem;
+            margin-top: 0.2rem;
           }
           p {
           }
           button {
             // justify-content: flex-start;
             width: 6rem;
-            border: solid greenyellow 1px;
+            border: solid #2ea599 1px;
             border-radius: 17%;
             background-color: rgb(247, 220, 224);
+            margin-left: 43.683%;
+            color: #2ea599;
+            @include for-tablet() {
+              margin: auto;
+              background-color: rgb(192, 192, 121);
+            }
+            @include for-desktop() {
+              margin: auto;
+              background-color: gold;
+              color: rgb(0, 173, 0);
+              width: 10rem;
+              margin-bottom: 2.5rem;
+            }
+
             &:hover {
+              color: #f7dce0;
+              background-color: #40e0d0;
             }
             &:active {
             }
@@ -107,34 +166,93 @@ html {
         border-top: 1px solid black;
         margin-top: 1rem;
         display: flex;
+        @include for-tablet() {
+        }
+
         justify-content: space-around;
         .leftTxt {
-          width: 46%;
+          width: 96%;
+          // border: 2px solid red;
           text-align: center;
+          @include for-tablet() {
+            margin-top: 1.2rem;
+          }
+          @include for-desktop() {
+            margin: 1rem 2rem;
+            width: 68%;
+          }
+
           h2 {
           }
           p {
+            @include for-tablet() {
+              text-align: left;
+            }
+            @include for-desktop() {
+              text-align: left;
+            }
           }
 
           .list {
+            @include for-desktop() {
+              margin-top: 3rem;
+            }
             ul {
               padding: 0px;
               margin: 0px;
+              @include for-tablet() {
+                margin-top: 1.4rem;
+              }
             }
             li {
               list-style: none;
+
+              @include for-tablet() {
+                margin: 0.5rem;
+              }
+              @include for-desktop() {
+                margin-top: 0.5rem;
+                text-align: left;
+                list-style: decimal;
+              }
             }
           }
         }
         .services-info-img {
           width: 46%;
           margin-top: 1rem;
+
+          // border: 2px solid red;
+          border: 0.75px solid black;
+
+          // float: right;
+          @include for-mobile() {
+            display: none;
+          }
+          @include for-tablet() {
+            margin-top: 1.5rem;
+          }
+          @include for-desktop() {
+            margin-top: 1.5rem;
+          }
         }
       }
+    }
 
-      footer {
-        text-align: center;
-        p {
+    footer {
+      text-align: center;
+      @include for-desktop() {
+        margin-top: 3rem;
+      }
+      p {
+      }
+      #easter-egg {
+        // color:
+        @include for-tablet() {
+          color: rgb(77, 60, 182);
+        }
+        @include for-desktop() {
+          color: rgb(190, 119, 61);
         }
       }
     }

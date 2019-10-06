@@ -22,6 +22,18 @@ html .container {
   max-width: 950px;
 }
 
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container {
+    max-width: 1150px;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container {
+    max-width: 2000px;
+  }
+}
+
 html .container header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +61,18 @@ html .container header nav a:hover {
   color: #6da5b8;
 }
 
+@media (min-width: 1251px) {
+  html .container header nav a:hover {
+    color: #5d7f8b;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container header nav a {
+    color: darkcyan;
+  }
+}
+
 html .container header nav .logoclass .logo {
   padding: 0.3rem;
 }
@@ -63,6 +87,14 @@ html .container header .services {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 1251px) {
+  html .container header .services p {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 html .container main .middleSect {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,21 +103,96 @@ html .container main .middleSect {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container main .middleSect {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container main .middleSect {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 html .container main .middleSect .midBox {
-  width: 46%;
-  text-align: center;
+  width: 98%;
+  text-align: left;
   border: 1px dashed turquoise;
   margin: 1%;
   padding: 0.75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container main .middleSect .midBox {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container main .middleSect .midBox {
+    width: 45%;
+    border: none;
+  }
+}
+
+html .container main .middleSect .midBox h2 {
+  text-align: center;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
 }
 
 html .container main .middleSect .midBox button {
   width: 6rem;
-  border: solid greenyellow 1px;
+  border: solid #2ea599 1px;
   border-radius: 17%;
   background-color: #f7dce0;
+  margin-left: 43.683%;
+  color: #2ea599;
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container main .middleSect .midBox button {
+    margin: auto;
+    background-color: #c0c079;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container main .middleSect .midBox button {
+    margin: auto;
+    background-color: gold;
+    color: #00ad00;
+    width: 10rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+html .container main .middleSect .midBox button:hover {
+  color: #f7dce0;
+  background-color: #40e0d0;
 }
 
 html .container main .btmSect {
@@ -99,8 +206,39 @@ html .container main .btmSect {
 }
 
 html .container main .btmSect .leftTxt {
-  width: 46%;
+  width: 96%;
   text-align: center;
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container main .btmSect .leftTxt {
+    margin-top: 1.2rem;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container main .btmSect .leftTxt {
+    margin: 1rem 2rem;
+    width: 68%;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container main .btmSect .leftTxt p {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container main .btmSect .leftTxt p {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container main .btmSect .leftTxt .list {
+    margin-top: 3rem;
+  }
 }
 
 html .container main .btmSect .leftTxt .list ul {
@@ -108,16 +246,73 @@ html .container main .btmSect .leftTxt .list ul {
   margin: 0px;
 }
 
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container main .btmSect .leftTxt .list ul {
+    margin-top: 1.4rem;
+  }
+}
+
 html .container main .btmSect .leftTxt .list li {
   list-style: none;
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container main .btmSect .leftTxt .list li {
+    margin: 0.5rem;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container main .btmSect .leftTxt .list li {
+    margin-top: 0.5rem;
+    text-align: left;
+    list-style: decimal;
+  }
 }
 
 html .container main .btmSect .services-info-img {
   width: 46%;
   margin-top: 1rem;
+  border: 0.75px solid black;
 }
 
-html .container main footer {
+@media (max-width: 950px) {
+  html .container main .btmSect .services-info-img {
+    display: none;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container main .btmSect .services-info-img {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container main .btmSect .services-info-img {
+    margin-top: 1.5rem;
+  }
+}
+
+html .container footer {
   text-align: center;
+}
+
+@media (min-width: 1251px) {
+  html .container footer {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1250px) {
+  html .container footer #easter-egg {
+    color: #4d3cb6;
+  }
+}
+
+@media (min-width: 1251px) {
+  html .container footer #easter-egg {
+    color: #be773d;
+  }
 }
 /*# sourceMappingURL=services.css.map */
