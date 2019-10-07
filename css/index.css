@@ -3,13 +3,13 @@ html {
   background-color: #6ea4be;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html {
     background-color: hotpink;
   }
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html {
     background-color: lightblue;
   }
@@ -20,15 +20,16 @@ html .container {
   width: 95%;
   margin: auto;
   position: relative;
+  border: 3px solid sandybrown;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html .container {
     max-width: 1150px;
   }
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html .container {
     max-width: 2000px;
   }
@@ -47,7 +48,7 @@ html .container header {
           align-items: center;
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html .container header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -68,7 +69,7 @@ html .container header .logo {
           flex-grow: 1;
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html .container header .logo {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -93,7 +94,7 @@ html .container header nav {
   margin-top: 1.01rem;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html .container header nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -102,7 +103,7 @@ html .container header nav {
   }
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html .container header nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -121,17 +122,17 @@ html .container header nav a {
   text-align: center;
   border-bottom: 1px solid grey;
   z-index: 1;
-  -webkit-transition: 150ms all ease-in-out;
-  transition: 150ms all ease-in-out;
+  -webkit-transition: 123ms all ease-in-out;
+  transition: 123ms all ease-in-out;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html .container header nav a {
     border: none;
   }
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html .container header nav a {
     border: none;
   }
@@ -139,8 +140,10 @@ html .container header nav a {
 
 html .container header nav a:hover {
   color: #0e3446;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+  -webkit-transform: rotateX(45deg);
+          transform: rotateX(45deg);
 }
 
 html .container header #nav-serv {
@@ -149,14 +152,14 @@ html .container header #nav-serv {
   postion: relative;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html .container header #nav-serv {
     border: none;
     padding: 0.3rem;
   }
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html .container header #nav-serv {
     border: none;
     padding: 0.3rem;
@@ -167,13 +170,14 @@ html main {
   margin-top: 13%;
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html main {
     margin-top: 1rem;
   }
 }
 
 html main .topSect {
+  border: 1px dashed red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,6 +190,7 @@ html main .topSect {
 }
 
 html main .topSect .textBtn {
+  border: 1px solid lime;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,14 +198,18 @@ html main .topSect .textBtn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  width: 100%;
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 html main .topSect .textBtn h1 {
+  border: 1px solid red;
   font-size: 4rem;
   font-style: italic;
   text-align: center;
@@ -216,7 +225,7 @@ html main .topSect .textBtn .btn {
   font-size: 1.1127rem;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html main .topSect .textBtn .btn {
     width: 9.575em;
   }
@@ -241,14 +250,14 @@ html main .topSect img {
   border-radius: 50%;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html main .topSect img {
     visibility: hidden;
     position: float;
   }
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html main .topSect img {
     visibility: visible;
     position: relative;
@@ -273,7 +282,7 @@ html main .topText {
           align-items: center;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html main .topText {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -282,7 +291,7 @@ html main .topText {
   }
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html main .topText {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -315,7 +324,7 @@ html main .topText .features {
           align-items: center;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html main .topText .features {
     margin-bottom: 0.35%;
   }
@@ -336,7 +345,7 @@ html main .topText .about {
           align-items: center;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html main .topText .about {
     margin-bottom: 0.35%;
   }
@@ -369,7 +378,7 @@ html main #middleImg .middle-img {
   border: inset 0.2862rem #43559e;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html main #middleImg .middle-img {
     width: 98.5%;
     border: ridge 0.2862rem #43559e;
@@ -389,7 +398,7 @@ html main .btmText {
           align-items: center;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   html main .btmText {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -400,7 +409,7 @@ html main .btmText {
   }
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   html main .btmText {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -455,7 +464,7 @@ footer {
   margin: 3% auto 0 auto;
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   footer {
     width: 100%;
     margin-top: 3.685rem;
@@ -468,7 +477,7 @@ footer h2 {
   margin: 2%;
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   footer h2 {
     text-align: start;
   }
@@ -479,7 +488,7 @@ footer address {
   margin: 0.35%;
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   footer address {
     text-align: start;
   }
@@ -490,7 +499,7 @@ footer a {
   color: #0274d4;
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   footer a {
     text-align: start;
   }
@@ -501,7 +510,7 @@ footer p {
   margin: 0.35%;
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   footer p {
     text-align: start;
   }
@@ -517,13 +526,13 @@ footer #easter-egg {
   text-align: center;
 }
 
-@media (min-width: 950px) and (max-width: 1250px) {
+@media (min-width: 500px) and (max-width: 800px) {
   footer #easter-egg {
     color: #d3488d;
   }
 }
 
-@media (min-width: 1251px) {
+@media (min-width: 800px) {
   footer #easter-egg {
     color: #84bacc;
   }
