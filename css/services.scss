@@ -28,6 +28,7 @@ html {
     margin: auto;
     position: relative;
     max-width: 950px;
+    min-width: 665px;
     @include for-tablet() {
       max-width: 1150px;
     }

@@ -20,6 +20,7 @@ html .container {
   margin: auto;
   position: relative;
   max-width: 950px;
+  min-width: 665px;
 }
 
 @media (min-width: 950px) and (max-width: 1250px) {

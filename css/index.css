@@ -121,6 +121,8 @@ html .container header nav a {
   text-align: center;
   border-bottom: 1px solid grey;
   z-index: 1;
+  -webkit-transition: 150ms all ease-in-out;
+  transition: 150ms all ease-in-out;
 }
 
 @media (min-width: 950px) and (max-width: 1250px) {
@@ -137,7 +139,8 @@ html .container header nav a {
 
 html .container header nav a:hover {
   color: #0e3446;
-  font-size: 1.7em;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 html .container header #nav-serv {
