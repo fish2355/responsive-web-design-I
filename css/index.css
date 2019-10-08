@@ -1,3 +1,540 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+@import url(/Users/Braden/Documents/Lambda_FSW/1. Web fundementals/2. Advanced CSS/1. Responsive Design 1/responsive-web-design-I/css/normalize.css);
+html {
+  background-color: #6ea4be;
+}
 
+@media (min-width: 500px) and (max-width: 800px) {
+  html {
+    background-color: hotpink;
+  }
+}
 
+@media (min-width: 800px) {
+  html {
+    background-color: lightblue;
+  }
+}
+
+html .container {
+  max-width: 714px;
+  width: 95%;
+  margin: auto;
+  position: relative;
+  border: 3px solid sandybrown;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html .container {
+    max-width: 1150px;
+  }
+}
+
+@media (min-width: 800px) {
+  html .container {
+    max-width: 2000px;
+  }
+}
+
+html .container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 800px) {
+  html .container header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space space-between;
+        -ms-flex-pack: space space-between;
+            justify-content: space space-between;
+  }
+}
+
+html .container header .logo {
+  padding: 0.3rem;
+  width: 183px;
+  height: 36px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media (min-width: 800px) {
+  html .container header .logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+html .container header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.01rem;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html .container header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 800px) {
+  html .container header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+html .container header nav a {
+  color: #065e1f;
+  font-size: 1.476rem;
+  text-decoration: none;
+  padding: 0.3rem;
+  margin: 0.2853rem 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid grey;
+  z-index: 1;
+  -webkit-transition: 123ms all ease-in-out;
+  transition: 123ms all ease-in-out;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html .container header nav a {
+    border: none;
+  }
+}
+
+@media (min-width: 800px) {
+  html .container header nav a {
+    border: none;
+  }
+}
+
+html .container header nav a:hover {
+  color: #0e3446;
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+  -webkit-transform: rotateX(45deg);
+          transform: rotateX(45deg);
+}
+
+html .container header #nav-serv {
+  border-top: 1px solid grey;
+  padding-top: 0.527rem;
+  postion: relative;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html .container header #nav-serv {
+    border: none;
+    padding: 0.3rem;
+  }
+}
+
+@media (min-width: 800px) {
+  html .container header #nav-serv {
+    border: none;
+    padding: 0.3rem;
+  }
+}
+
+html main {
+  margin-top: 13%;
+}
+
+@media (min-width: 800px) {
+  html main {
+    margin-top: 1rem;
+  }
+}
+
+html main .topSect {
+  border: 1px dashed red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 7.5%;
+}
+
+html main .topSect .textBtn {
+  border: 1px solid lime;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html main .topSect .textBtn h1 {
+  border: 1px solid red;
+  font-size: 4rem;
+  font-style: italic;
+  text-align: center;
+  margin: auto;
+}
+
+html main .topSect .textBtn .btn {
+  width: 8em;
+  height: 2.5em;
+  background-color: #f1e895;
+  border: 0.1267rem solid #0a6b26;
+  margin: 1.6362rem auto 0.5rem auto;
+  font-size: 1.1127rem;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html main .topSect .textBtn .btn {
+    width: 9.575em;
+  }
+}
+
+html main .topSect .textBtn .btn:hover {
+  background-color: #bec8ee;
+  color: #041822;
+  border: 1px solid darkmagenta;
+}
+
+html main .topSect .textBtn .btn:focus {
+  background-color: lawngreen;
+}
+
+html main .topSect img {
+  position: absolute;
+  opacity: 0.2375;
+  top: 22.175rem;
+  z-index: -1;
+  border: 3.7325px solid #273469d3;
+  border-radius: 50%;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html main .topSect img {
+    visibility: hidden;
+    position: float;
+  }
+}
+
+@media (min-width: 800px) {
+  html main .topSect img {
+    visibility: visible;
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+html main .topText {
+  border-top: 2px dashed #007ec7;
+  width: 100%;
+  margin: 1% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html main .topText {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 800px) {
+  html main .topText {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+html main .topText a,
+html main .topText a:visited {
+  color: black;
+}
+
+html main .topText a:hover {
+  color: #321741;
+}
+
+html main .topText .features {
+  margin: 2.1369% auto 1.6438% auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html main .topText .features {
+    margin-bottom: 0.35%;
+  }
+}
+
+html main .topText .about {
+  margin: 1.6438% auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html main .topText .about {
+    margin-bottom: 0.35%;
+  }
+}
+
+html main .topText h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.65rem;
+}
+
+html main .topText p {
+  text-align: center;
+  width: 90%;
+  font-size: 1.05rem;
+}
+
+html main #middleImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html main #middleImg .middle-img {
+  width: 97%;
+  margin: 2.4674% auto;
+  border: inset 0.2862rem #43559e;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html main #middleImg .middle-img {
+    width: 98.5%;
+    border: ridge 0.2862rem #43559e;
+  }
+}
+
+html main .btmText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  html main .btmText {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-bottom: 2px solid black;
+    padding-bottom: 0.7365rem;
+  }
+}
+
+@media (min-width: 800px) {
+  html main .btmText {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-bottom: 2px dashed black;
+    padding-bottom: 0.7365rem;
+  }
+}
+
+html main .btmText .btm-box {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1.6438% auto;
+}
+
+html main .btmText .btm-box a,
+html main .btmText .btm-box a:visited {
+  color: black;
+}
+
+html main .btmText .btm-box a:hover {
+  color: #321741;
+}
+
+html main h2 {
+  font-size: 1.65rem;
+  margin: 2%;
+  text-decoration: underline;
+}
+
+html main p {
+  width: 90%;
+  font-size: 1.05rem;
+  margin: 1%;
+}
+
+footer {
+  width: 87%;
+  margin: 3% auto 0 auto;
+}
+
+@media (min-width: 800px) {
+  footer {
+    width: 100%;
+    margin-top: 3.685rem;
+  }
+}
+
+footer h2 {
+  font-size: 1.65rem;
+  text-align: right;
+  margin: 2%;
+}
+
+@media (min-width: 800px) {
+  footer h2 {
+    text-align: start;
+  }
+}
+
+footer address {
+  text-align: right;
+  margin: 0.35%;
+}
+
+@media (min-width: 800px) {
+  footer address {
+    text-align: start;
+  }
+}
+
+footer a {
+  text-decoration: none;
+  color: #0274d4;
+}
+
+@media (min-width: 800px) {
+  footer a {
+    text-align: start;
+  }
+}
+
+footer p {
+  text-align: right;
+  margin: 0.35%;
+}
+
+@media (min-width: 800px) {
+  footer p {
+    text-align: start;
+  }
+}
+
+footer .copy {
+  text-align: center;
+  margin: 0.35%;
+}
+
+footer #easter-egg {
+  color: #6397b1;
+  text-align: center;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  footer #easter-egg {
+    color: #d3488d;
+  }
+}
+
+@media (min-width: 800px) {
+  footer #easter-egg {
+    color: #84bacc;
+  }
+}
+/*# sourceMappingURL=index.css.map */

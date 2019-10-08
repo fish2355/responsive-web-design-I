@@ -1,0 +1,400 @@
+@import "./normalize.css";
+
+// @mixin for-tablet {
+//   @media (min-width: 950px) and (max-width: 1250px) {
+//     @content;
+//   }
+// }
+// @mixin for-desktop {
+//   @media (min-width: 1251px) {
+//     @content;
+//   }
+// }
+@mixin for-tablet {
+  @media (min-width: 500px) and (max-width: 800px) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (min-width: 800px) {
+    @content;
+  }
+}
+@mixin for-mobile {
+  @media (max-width: 499px) {
+    @content;
+  }
+}
+html {
+  background-color: #6ea4be;
+  //   font-size: 20px;
+  @include for-tablet() {
+    background-color: hotpink;
+  }
+  @include for-desktop() {
+    background-color: lightblue;
+  }
+
+  .container {
+    max-width: 714px;
+    width: 95%;
+    margin: auto;
+    position: relative;
+    border: 3px solid sandybrown;
+    @include for-tablet() {
+      max-width: 1150px;
+    }
+    @include for-desktop() {
+      max-width: 2000px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      @include for-desktop() {
+        flex-direction: row;
+        justify-content: space space-between;
+      }
+
+      align-items: center;
+      .logo {
+        padding: 0.3rem;
+        width: 183px;
+        height: 36px;
+        flex-grow: 1;
+        // width: 20px;
+        // set to absolute then not on nav?
+
+        // &:hover {
+        // }
+        // &:active .drop-down a,
+        // &:focus .drop-down a {
+        // visibility: visible;
+        //   color: green;
+        // }
+        @include for-tablet() {
+        }
+        @include for-desktop() {
+          order: 1;
+        }
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1.01rem;
+        // border: 2px solid red;
+        // position: absolute;
+
+        @include for-tablet() {
+          flex-direction: row;
+          // flex-wrap: wrap;
+          // border: 2px solid red;
+        }
+        @include for-desktop() {
+          flex-direction: row;
+        }
+
+        a {
+          // border: 1px solid red;
+          // display: none;
+          color: #065e1f;
+          font-size: 1.476rem;
+          text-decoration: none;
+          padding: 0.3rem;
+          margin: 0.2853rem 0;
+          width: 100%;
+          text-align: center;
+          border-bottom: 1px solid grey;
+          z-index: 1;
+          // position: absolute;
+          transition: 123ms all ease-in-out;
+
+          @include for-tablet() {
+            border: none;
+          }
+          @include for-desktop() {
+            border: none;
+          }
+
+          &:hover {
+            color: rgb(14, 52, 70);
+            // font-size: 1.7em;
+            transform: scale(1.13);
+            transform: rotateX(45deg);
+            // position: relative;
+          }
+        }
+        // .drop-down {
+        //   // visibility: hidden;
+        //   color: red;
+      }
+      #nav-serv {
+        border-top: 1px solid grey;
+        padding-top: 0.527rem;
+        postion: relative;
+        @include for-tablet() {
+          border: none;
+          padding: 0.3rem;
+        }
+        @include for-desktop() {
+          border: none;
+
+          padding: 0.3rem;
+        }
+      }
+    }
+  }
+  main {
+    margin-top: 13%;
+    @include for-desktop() {
+      margin-top: 1rem;
+    }
+    .topSect {
+      border: 1px dashed red;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 7.5%;
+
+      .textBtn {
+        border: 1px solid lime;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+          border: 1px solid red;
+          font-size: 4rem;
+          font-style: italic;
+          text-align: center;
+          margin: auto;
+        }
+        .btn {
+          width: 8em;
+          height: 2.5em;
+          // border: 1px solid red;
+          // background-color: #fff6a7;
+          background-color: #f1e895;
+          border: 0.1267rem solid #0a6b26;
+          margin: 1.6362rem auto 0.5rem auto;
+          font-size: 1.1127rem;
+          @include for-tablet() {
+            width: 9.575em;
+          }
+
+          &:hover {
+            background-color: #bec8ee;
+            color: rgb(4, 24, 34);
+            //   color: blueviolet;
+            border: 1px solid darkmagenta;
+          }
+          &:active {
+          }
+          &:focus {
+            background-color: lawngreen;
+          }
+        }
+      }
+
+      img {
+        // display: none;
+        position: absolute;
+        opacity: 0.2375;
+        top: 22.175rem;
+        z-index: -1;
+        border: 3.7325px solid #273469d3;
+        border-radius: 50%;
+
+        @include for-tablet() {
+          visibility: hidden;
+          position: float;
+        }
+        @include for-desktop() {
+          visibility: visible;
+          position: relative;
+          top: 0;
+          opacity: 1;
+        }
+      }
+    }
+    .topText {
+      border-top: 2px dashed #007ec7;
+      width: 100%;
+      margin: 1% auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include for-tablet() {
+        flex-direction: row;
+      }
+      @include for-desktop() {
+        flex-direction: row;
+      }
+      a,
+      a:visited {
+        color: black;
+      }
+      a:hover {
+        color: #321741;
+      }
+
+      .features {
+        //   border: 1px solid deeppink;
+        margin: 2.1369% auto 1.6438% auto;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include for-tablet() {
+          margin-bottom: 0.35%;
+        }
+      }
+      .about {
+        //   border: 1px solid deeppink;
+        margin: 1.6438% auto;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include for-tablet() {
+          margin-bottom: 0.35%;
+        }
+      }
+      h2 {
+        text-align: center;
+        text-decoration: underline;
+        //   text-decoration-color: #20c20e;
+        //   border-bottom: 3px solid #20c20e;
+        font-size: 1.65rem;
+      }
+      p {
+        text-align: center;
+        //   border: 1px solid brown;
+        width: 90%;
+        font-size: 1.05rem;
+      }
+    }
+    #middleImg {
+      display: flex;
+      justify-content: center;
+      .middle-img {
+        width: 97%;
+        margin: 2.4674% auto;
+        border: inset 0.2862rem #43559e;
+        @include for-tablet() {
+          width: 98.5%;
+          border: ridge 0.2862rem #43559e;
+        }
+      }
+    }
+    .btmText {
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include for-tablet() {
+        flex-direction: row;
+        border-bottom: 2px solid black;
+        padding-bottom: 0.7365rem;
+      }
+      @include for-desktop() {
+        flex-direction: row;
+        border-bottom: 2px dashed black;
+        padding-bottom: 0.7365rem;
+      }
+      .btm-box {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        // border: solid red 1px;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+        margin: 1.6438% auto;
+        a,
+        a:visited {
+          color: black;
+        }
+        a:hover {
+          color: #321741;
+        }
+      }
+    }
+
+    h2 {
+      // border: solid red 1px;
+      font-size: 1.65rem;
+      margin: 2%;
+      text-decoration: underline;
+    }
+    p {
+      width: 90%;
+      // border: 1px solid red;
+      font-size: 1.05rem;
+      margin: 1%;
+    }
+  }
+}
+footer {
+  // border: 1px solid red;
+  width: 87%;
+  margin: 3% auto 0 auto;
+  @include for-desktop() {
+    width: 100%;
+    margin-top: 3.685rem;
+  }
+  h2 {
+    font-size: 1.65rem;
+    //   border: 1px solid yellow;
+    text-align: right;
+    margin: 2%;
+    @include for-desktop() {
+      text-align: start;
+    }
+  }
+  address {
+    //   border: 1px solid blue;
+    text-align: right;
+    margin: 0.35%;
+    @include for-desktop() {
+      text-align: start;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #0274d4;
+    @include for-desktop() {
+      text-align: start;
+    }
+  }
+  p {
+    //   border: 1px solid orangered;
+    text-align: right;
+    margin: 0.35%;
+    @include for-desktop() {
+      text-align: start;
+    }
+  }
+
+  .copy {
+    //   border: 1px solid green;
+    text-align: center;
+    margin: 0.35%;
+  }
+  #easter-egg {
+    color: rgb(99, 151, 177);
+    text-align: center;
+    @include for-tablet() {
+      color: rgb(211, 72, 141);
+    }
+    @include for-desktop() {
+      color: rgb(132, 186, 204);
+    }
+  }
+}
